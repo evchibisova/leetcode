@@ -1,3 +1,6 @@
+# 
+
+
 class Solution(object):
     def min_deletion_size(self, A):
         d_length = 0
