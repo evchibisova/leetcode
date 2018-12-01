@@ -1,10 +1,10 @@
-# 
+# https://leetcode.com/problems/delete-columns-to-make-sorted
 
 
 class Solution(object):
-    def min_deletion_size(self, A):
+    def min_deletion_size(self, a):
         d_length = 0
-        for l in zip(*A):
+        for l in zip(*a):
             if list(l) != sorted(l):
                 d_length += 1
 
