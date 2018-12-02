@@ -1,6 +1,3 @@
-# https://leetcode.com/problems/delete-columns-to-make-sorted
-
-
 class Solution(object):
     def min_deletion_size(self, a):
         d_length = 0
