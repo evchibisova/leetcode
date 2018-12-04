@@ -12,6 +12,3 @@ class Solution(object):
             answer.append(answer[i - n] + 1)
         return answer
 
-s = Solution()
-print(s.count_bits(2))
-print(s.count_bits(5))
