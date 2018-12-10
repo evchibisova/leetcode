@@ -16,7 +16,10 @@ class Solution:
             column_highs.append(max_in_column)
 
         for row in grid:
-            max_in_row = max(row)
+            if row:
+                max_in_row = max(row)
+            else:
+                return 0
             for building_num in range(len(row)):
                 total_sum += min(max_in_row, column_highs[building_num]) - row[building_num]
 
