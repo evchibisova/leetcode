@@ -28,5 +28,5 @@ class Solution(object):
             steps += 1
         return spiral
 
-# s = Solution()
-# print(s.spiralMatrixIII(1,4,0,0))
+s = Solution()
+print(s.spiralMatrixIII(1,5,1,0))
