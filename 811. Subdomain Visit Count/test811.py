@@ -13,5 +13,5 @@ class TestSolution(unittest.TestCase):
                          self.s.subdomainVisits(["9001 discuss.leetcode.com"]).sort())
 
     def test_from_leetcode_2(self):
-        self.assertEqual(["901 mail.com","50 yahoo.com","900 google.mail.com","5 wiki.org","5 org","1 intel.mail.com","951 com"].sort(),
-                         self.s.subdomainVisits(["900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"]).sort())
+        self.assertCountEqual(["901 mail.com","50 yahoo.com","900 google.mail.com","5 wiki.org","5 org","1 intel.mail.com","951 com"],
+                              self.s.subdomainVisits(["900 google.mail.com", "50 yahoo.com", "1 intel.mail.com", "5 wiki.org"]))
