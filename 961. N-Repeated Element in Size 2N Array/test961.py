@@ -12,8 +12,10 @@ class TestSolution(unittest.TestCase):
         self.assertEqual(3, self.solution.repeatedNTimes([1, 2, 3, 3]))
 
     def test_from_leetcode_2(self):
-        self.assertEqual(2, self.solution.repeatedNTimes([2,1,2,5,3,2]))
+        self.assertEqual(2, self.solution.repeatedNTimes([2, 1, 2, 5, 3, 2]))
 
     def test_from_leetcode_3(self):
-        self.assertEqual(5, self.solution.repeatedNTimes([5,1,5,2,5,3,5,4]))
+        self.assertEqual(5, self.solution.repeatedNTimes([5, 1, 5, 2, 5, 3, 5, 4]))
 
+    def test_unique_numbers(self):
+        self.assertIsNone(self.solution.repeatedNTimes([1, 2, 3, 4, 5]))
