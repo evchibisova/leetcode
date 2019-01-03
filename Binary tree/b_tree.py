@@ -15,14 +15,16 @@ def b_tree_maker(roots):
     while root_list:
         root = root_list.pop(0)
         if lst:
-            root.left = TreeNode(lst.pop(0))
+            if lst[0]:
+                root.left = TreeNode(lst.pop(0))
+            else:
+                lst.pop(0)
             root_list.append(root.left)
         if lst:
-            root.right = TreeNode(lst.pop(0))
+            if lst[0]:
+                root.right = TreeNode(lst.pop(0))
+            else:
+                lst.pop(0)
             root_list.append(root.right)
 
     return tree
-
-# x = b_tree_maker([10, 8, 12, 2, 9, 5, 13, None, 4])
-# print(x.val, x.left.val, x.right.val, x.left.left.val, x.left.right.val, x.right.left.val, x.right.right.val,
-#       x.left.left.left.val, x.left.left.right.val)
